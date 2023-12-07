@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>flexbox</title>
+    <title>Forms</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <div class="padre">
-        <div class="card">
-                <img src="https://cataas.com/cat?1" alt="">
-                <h3>Gatos</h3>
-                <p>Este gato se llama  Luis</p>
+    <h2>Formularios</h2>
+    <form class="form">
+        <button type="reset">Restablecer valores</button>
+        <legend>Datos del usuario</legend>
+        <label for="nombre">Nombre *</label>
+        <input type="text" class="form__input" required />
+        <label for="">Email *</label>
+        <input type="email" class="form__input" required />
+        <label for="">Contraseña *</label>
+        <input type="password" name="" id="" class="form__input" required>
+        <label for="" class="form__input">Telefono</label>
+        <input type="number" name="" id="">
+        <label for="">Foto de perfil</label>
+        <input type="file">
+        <label for="">Sobre ti</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <label for="">Fruta Favorita</label>
+        <div>
+            <select name="" id="">
+                <option value="">Manzanas</option>
+                <option value="">Pera</option>
+                <option value="">Pina</option>
+                <option value="">Mandarina</option>
+            </select>
         </div>
-        <div class="card">
-                <img src="https://cataas.com/cat?2" alt="">
-                <h3>Gatos</h3>
-                <p>Este gato se llama  Ana</p>
+        <div class="checkbox">
+            <h4>Selecciona los lenguajes de programacion que te gusten</h4>
+            <div class="">
+                <input type="checkbox">
+                <label for="">HTML</label>
+            </div>
+            <div class="">
+                <input type="checkbox">
+                <label for="">CSS</label>
+            </div>
+            <div class="">
+                <input type="checkbox">
+                <label for="">Javascript</label>
+            </div>
+            <div class="">
+                <input type="checkbox">
+                <label for="">Java</label>
+            </div>
+            <div class="">
+                <input type="checkbox">
+                <label for="">Goland</label>
+            </div>
         </div>
-        <div class="card">
-                <img src="https://cataas.com/cat?3" alt="">
-                <h3>Gatos</h3>
-                <p>Este gato se llama Dafne</p>
-        </div>
-        <div class="card">
-                <img src="https://cataas.com/cat?4" alt="">
-                <h3>Gatos</h3>
-                <p>Este gato se llama  Iphone</p>
-        </div>
-    </div>
+        <input type="submit" class="submit">
+    </form>
+
+    <form action="">
+        <legend>Direccion</legend>
+
+    </form>
 </body>
+
 </html>
