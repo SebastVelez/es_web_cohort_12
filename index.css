@@ -49,6 +49,9 @@ body {
 .recipes__title {
   margin: 0;
 }
+.recipes__subtitle {
+  width: 300px;
+}
 
 .recipes__videos {
   width: 100%;
