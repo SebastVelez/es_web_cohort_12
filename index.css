@@ -1,25 +1,63 @@
-.form {
-  border: 1px solid black;
-  width: 500px;
-  height: 100%;
+body {
+  margin: 0;
+}
+
+.reservation {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(201, 201, 233);
 }
 
-.form__input:invalid {
-  border: 1px solid red;
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
 }
 
-.form__input:valid {
-  border: 1px solid rgb(8, 168, 27);
+.form__label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form__input {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.form__submit {
+  width: 250px;
+  height: 30px;
+  background-color: #2f80ed;
 }
 
 .submit:hover {
   cursor: pointer;
 }
 
-.checkbox {
+.recipes {
+  width: 100%;
+  height: 100vh;
+  background-color: #0a2750;
+  color: white;
+  padding: 40px 0 0 0;
+}
+
+.recipes__title {
+  margin: 0;
+}
+
+.recipes__videos {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.recipes__video-description {
+  display: flex;
+  justify-content: space-between;
 }
