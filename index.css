@@ -1,66 +1,80 @@
-body {
+h3,
+h1,
+h2,
+p,
+div {
   margin: 0;
 }
 
-.reservation {
-  width: 100%;
-  height: 100vh;
+.container {
+  gap: 40px;
+  display: grid;
+  grid-template-areas:
+    "bulbasaur bulbasaur bulbasaur"
+    "squartle squartle charmander"
+    ". pikachu charmander";
+}
+
+.card {
+  background-color: bisque;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.pikachu {
+  grid-area: pikachu;
+}
+
+img {
+  max-width: 300px;
+  min-width: 200px;
+  width: 100%;
+}
+
+.charmander {
+  grid-area: charmander;
+}
+
+.squartle {
+  grid-area: squartle;
+}
+
+.bulbasaur {
+  grid-area: bulbasaur;
+  display: flex;
+  justify-content: center;
+}
+
+.card__background {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(201, 201, 233);
-}
-
-.form {
-  display: flex;
   flex-direction: column;
-  max-width: 400px;
+  width: 100%;
+  height: 100%;
+}
+.card__background:hover {
+  background-color: rgba(16, 13, 13, 0.383);
 }
 
-.form__label {
-  font-size: 16px;
-  font-weight: 600;
+.card__button {
+  width: 150px;
+  background-color: blue;
+  color: white;
+  z-index: 2;
 }
 
-.form__input {
-  width: 250px;
-  height: 30px;
-  margin-bottom: 20px;
-}
-.form__submit {
-  width: 250px;
-  height: 30px;
-  background-color: #2f80ed;
-}
-
-.submit:hover {
+.card__button:hover {
+  background-color: rgba(3, 3, 172, 0.742);
   cursor: pointer;
 }
 
-.recipes {
-  width: 100%;
-  height: 100vh;
-  background-color: #0a2750;
-  color: white;
-  padding: 40px 0 0 0;
+.card__image {
+  width: 20%;
 }
 
-.recipes__title {
-  margin: 0;
-}
-.recipes__subtitle {
-  width: 300px;
-}
-
-.recipes__videos {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  column-gap: 40px;
-}
-
-.recipes__video-description {
-  display: flex;
-  justify-content: space-between;
+.card__image:hover {
+  width: 40%;
 }
